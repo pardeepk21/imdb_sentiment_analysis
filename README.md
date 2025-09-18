@@ -33,20 +33,23 @@ It compares **Naive Bayes** and **Logistic Regression** on the popular **IMDB da
 ## ⚙️ Installation & Setup  
 
 1. **Clone the repository**  
-```bash
-git clone https://github.com/your-username/sentiment-analysis.git
-cd sentiment-analysis
+    ```bash
+    git clone https://github.com/your-username/sentiment-analysis.git
+    cd sentiment-analysis
 
 2. Create a virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
+    ```bash
+    python -m venv venv
+    source venv/bin/activate   # Mac/Linux
+    venv\Scripts\activate      # Windows
 
-3. Install dependencies
-pip install -r requirements.txt
+4. Install dependencies
+    ```bash
+   pip install -r requirements.txt
 
-4. Run the script
-python sentiments_analysis.py
+6. Run the script
+   ```bash
+    python sentiments_analysis.py
 
 # 📊 Example Output
   ✅ Accuracy
@@ -68,13 +71,13 @@ custom_vec = vectorizer.transform(custom_reviews)
 print(lr_model.predict(custom_vec))
 
 # 📦 Requirements
-    Python 3.8+
-    pandas
-    numpy
-    matplotlib
-    scikit-learn
+  Python 3.8+
+  pandas
+  numpy
+  matplotlib
+  scikit-learn
     
-    Install everything via:
+  Install everything via:
     pip install -r requirements.txt
 
 #🚀 Future Improvements
