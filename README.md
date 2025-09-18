@@ -1,22 +1,11 @@
 # 🎬 Sentiment Analysis on IMDB Reviews
 
-# 
-
-# This project demonstrates Sentiment Analysis (classifying movie reviews as positive or negative) using Python, Scikit-learn, and Machine Learning models.
-
-# It compares Naive Bayes and Logistic Regression on the popular IMDB dataset.
-
-# 
+This project demonstrates Sentiment Analysis (classifying movie reviews as positive or negative) using Python, Scikit-learn, and Machine Learning models. It compares Naive Bayes and Logistic Regression on the popular IMDB dataset.
 
 # 📌 Features
+Loads and preprocesses the IMDB movie reviews dataset (50,000 reviews).
 
-# 
-
-# Loads and preprocesses the IMDB movie reviews dataset (50,000 reviews).
-
-# 
-
-# Converts raw text into numeric features using TF-IDF vectorization.
+Converts raw text into numeric features using TF-IDF vectorization.
 
 # 
 
