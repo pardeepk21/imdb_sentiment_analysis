@@ -23,6 +23,14 @@ print(data.head())
 data["review"] = data["review"].apply(clean_text)
 X = data["review"]
 y = data["sentiment"]
+y_pos = y[y=="positive"]
+y_neg = y[y == "negative"]
+
+print("Number of positive reviews:", len(y_pos))
+print("Number of negative reviews:", len(y_neg))
+
+count_pos = len(y_pos)
+count_neg = len(y_neg)
 
 #print(X)
 
@@ -53,6 +61,13 @@ test_vec = vectorizer.transform(test_review)
 print("Prediction:", model.predict(test_vec))
 
 # Plot
+labels = ["Positive", "Negative"]
+counts = [count_pos, count_neg]
+plt.bar(labels, counts, color=["green", "red"])
+plt.title("Distribution of Sentiments in IMDB Dataset")
+plt.xlabel("Sentiment")
+plt.ylabel("Number of Reviews")
+plt.show()
 '''
 words, scores = zip(*top_pos)
 plt.barh(words, scores)
