@@ -21,11 +21,32 @@ It compares **Naive Bayes** and **Logistic Regression** on the popular **IMDB da
 ---
 ## 📂 Project Structure  
 📦 sentiment-analysis
+
 ┣ 📜 sentiments_analysis.py # Main script
+
 ┣ 📜 IMDB Dataset.csv # Dataset (from Kaggle or other source)
+
 ┣ 📜 requirements.txt # Dependencies
+
 ┗ 📜 README.md # Documentation
 
+## ⚙️ Installation & Setup  
+
+1. **Clone the repository**  
+```bash
+git clone https://github.com/your-username/sentiment-analysis.git
+cd sentiment-analysis
+
+2. Create a virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate      # Windows
+
+3. Install dependencies
+pip install -r requirements.txt
+
+4. Run the script
+python sentiments_analysis.py
 
 # 📊 Example Output
   ✅ Accuracy
@@ -55,3 +76,13 @@ print(lr_model.predict(custom_vec))
     
     Install everything via:
     pip install -r requirements.txt
+
+#🚀 Future Improvements
+Add deep learning models (LSTMs, Transformers like BERT)
+Deploy as a Flask/FastAPI web app
+Create an interactive Streamlit dashboard for real-time predictions
+
+#👨‍💻 Author
+
+Pardeep Kumar
+🌐 GitHub: ardeepk21
